@@ -55,6 +55,16 @@ class ExportCVContent extends LitElement {
         flex-direction: column;
         flex: 1;
       }
+
+      input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+      }
+
+      input[type="checkbox"]:checked {
+        background-color: #ccc;
+      }
     `;
   }
 
@@ -87,21 +97,47 @@ class ExportCVContent extends LitElement {
         <main>
           <section>
             <h2>
-              <mark>Contact Information</mark>
+              <mark>Personal Information</mark>
+              <input
+                type="checkbox"
+                id="personal"
+                name="personal"
+                value="personal"
+              />
             </h2>
             <address>
               <ul>
                 <li>Str. Veteranilor</li>
-                <li>Phone: <a href="tel:+40728221297">Phone Number</a></li>
+                <li>
+                  Phone: <a href="tel:+40728221297">Phone Number</a>
+                  <input
+                    type="checkbox"
+                    id="personal1"
+                    name="personal1"
+                    value="personal1"
+                  />
+                </li>
                 <li>
                   Email:
                   <a href="mailto:razvanstefanpaduraru@gmail.com"
                     >Email Address</a
                   >
+                  <input
+                    type="checkbox"
+                    id="personal2"
+                    name="personal2"
+                    value="personal2"
+                  />
                 </li>
                 <li>
                   Website:
                   <a href="https://github.com/razvanpaduraru">Github</a>
+                  <input
+                    type="checkbox"
+                    id="personal3"
+                    name="personal3"
+                    value="personal3"
+                  />
                 </li>
               </ul>
             </address>
@@ -110,6 +146,7 @@ class ExportCVContent extends LitElement {
           <section>
             <h2>
               <mark>Working experience</mark>
+              <input type="checkbox" id="work" name="work" value="work" />
             </h2>
             <details>
               <summary>
@@ -117,6 +154,7 @@ class ExportCVContent extends LitElement {
                   >Undergradueted Teaching Assistent @ Politehnica Univeristy of
                   Bucharest</strong
                 >
+                <input type="checkbox" id="work1" name="work1" value="work1" />
               </summary>
               <ul>
                 <li>Algorithm Analysis Course C/C++/JAVA</li>
@@ -131,6 +169,7 @@ class ExportCVContent extends LitElement {
                   >Autonomuos Driving vs Robotic Control Driving Intern @ EXPLEO
                   GROUP ROMANIA</strong
                 >
+                <input type="checkbox" id="work2" name="work2" value="work2" />
               </summary>
               <ul>
                 <li>Implemented a self driving car</li>
@@ -142,6 +181,12 @@ class ExportCVContent extends LitElement {
           <section>
             <h2>
               <mark>Education</mark>
+              <input
+                type="checkbox"
+                id="education"
+                name="education"
+                value="education"
+              />
             </h2>
 
             <details>
@@ -150,6 +195,12 @@ class ExportCVContent extends LitElement {
                   >Bachelor of Computer Science and Engineering @ Faculty of
                   Automatic Control and Computers</strong
                 >
+                <input
+                  type="checkbox"
+                  id="education1"
+                  name="education1"
+                  value="education1"
+                />
               </summary>
               <ul>
                 <li><strong>GPA: 3.67/4</strong></li>
@@ -162,6 +213,12 @@ class ExportCVContent extends LitElement {
                   >Cisco Certified Network Associate @ Cisco's UPB
                   Academy</strong
                 >
+                <input
+                  type="checkbox"
+                  id="education2"
+                  name="education2"
+                  value="education2"
+                />
               </summary>
               <ul>
                 <li>
@@ -174,11 +231,23 @@ class ExportCVContent extends LitElement {
           <section>
             <h2>
               <mark>Projects</mark>
+              <input
+                type="checkbox"
+                id="projects"
+                name="projects"
+                value="projects"
+              />
             </h2>
 
             <details>
               <summary>
                 <strong>IoT Platform using Microservices</strong>
+                <input
+                  type="checkbox"
+                  id="projects1"
+                  name="projects1"
+                  value="projects1"
+                />
               </summary>
               <ul>
                 <li>University Project</li>
@@ -204,6 +273,12 @@ class ExportCVContent extends LitElement {
             <details>
               <summary>
                 <strong>Symbols Solving and Type Verification</strong>
+                <input
+                  type="checkbox"
+                  id="projects2"
+                  name="projects2"
+                  value="projects2"
+                />
               </summary>
               <ul>
                 <li>University Project</li>
@@ -218,6 +293,12 @@ class ExportCVContent extends LitElement {
             <details>
               <summary>
                 <strong>XML-parser and CAN code generator</strong>
+                <input
+                  type="checkbox"
+                  id="projects3"
+                  name="projects3"
+                  value="projects3"
+                />
               </summary>
               <ul>
                 <li>Internship Project</li>
@@ -232,6 +313,12 @@ class ExportCVContent extends LitElement {
             <details>
               <summary>
                 <strong>Crowdsensing</strong>
+                <input
+                  type="checkbox"
+                  id="projects4"
+                  name="projects4"
+                  value="projects4"
+                />
               </summary>
               <ul>
                 <li>University Project</li>
@@ -246,6 +333,12 @@ class ExportCVContent extends LitElement {
             <details>
               <summary>
                 <strong>MiniCAD</strong>
+                <input
+                  type="checkbox"
+                  id="projects5"
+                  name="projects5"
+                  value="projects5"
+                />
               </summary>
               <ul>
                 <li>University Project</li>
@@ -261,11 +354,23 @@ class ExportCVContent extends LitElement {
           <section>
             <h2>
               <mark>Extracurricular Activities</mark>
+              <input
+                type="checkbox"
+                id="activities"
+                name="activities"
+                value="activities"
+              />
             </h2>
 
             <details>
               <summary>
                 <strong>Spring up your app</strong>
+                <input
+                  type="checkbox"
+                  id="activities1"
+                  name="activities1"
+                  value="activities1"
+                />
               </summary>
               <ul>
                 <li>Workshop organized by Orange</li>
@@ -279,6 +384,12 @@ class ExportCVContent extends LitElement {
             <details>
               <summary>
                 <strong>Volutneering at LSAC</strong>
+                <input
+                  type="checkbox"
+                  id="activities2"
+                  name="activities2"
+                  value="activities2"
+                />
               </summary>
               <ul>
                 <li>Faculty's league of students</li>
@@ -289,6 +400,12 @@ class ExportCVContent extends LitElement {
             <details>
               <summary>
                 <strong>3DPUB Summer School</strong>
+                <input
+                  type="checkbox"
+                  id="activities3"
+                  name="activities3"
+                  value="activities3"
+                />
               </summary>
               <ul>
                 <li>Workshop organized by ACS</li>
@@ -299,6 +416,12 @@ class ExportCVContent extends LitElement {
             <details>
               <summary>
                 <strong>Erasmus+</strong>
+                <input
+                  type="checkbox"
+                  id="activities4"
+                  name="activities4"
+                  value="activities4"
+                />
               </summary>
               <ul>
                 <li>Trainer in the "Learning Romanian" activity</li>
@@ -309,11 +432,18 @@ class ExportCVContent extends LitElement {
           <section>
             <h2>
               <mark>Skills</mark>
+              <input type="checkbox" id="skills" name="skills" value="skills" />
             </h2>
 
             <details>
               <summary>
                 <strong>Programming Languages</strong>
+                <input
+                  type="checkbox"
+                  id="prlanguages"
+                  name="prlanguages"
+                  value="prlanguages"
+                />
               </summary>
               <ul>
                 <li>Intermediate: C/C++, Java, Python</li>
@@ -324,6 +454,12 @@ class ExportCVContent extends LitElement {
             <details>
               <summary>
                 <strong>Technologies</strong>
+                <input
+                  type="checkbox"
+                  id="technologies"
+                  name="technologies"
+                  value="technologies"
+                />
               </summary>
               <ul>
                 <li>Unity, Maya, Docker</li>
@@ -333,6 +469,12 @@ class ExportCVContent extends LitElement {
             <details>
               <summary>
                 <strong>Language</strong>
+                <input
+                  type="checkbox"
+                  id="languages"
+                  name="languages"
+                  value="languages"
+                />
               </summary>
               <table style="width:100%">
                 <tr>
@@ -354,35 +496,6 @@ class ExportCVContent extends LitElement {
                   <td>C2(native)</td>
                 </tr>
               </table>
-            </details>
-          </section>
-
-          <section>
-            <h2>
-              <mark>Other Skills</mark>
-            </h2>
-
-            <details>
-              <summary>
-                <strong>Sportive dance</strong>
-              </summary>
-              <ul>
-                <li>Practiced sportive dance for eleven years</li>
-                <li>
-                  Titles: Region Champion (2012, 2013, 2014), Dance Classes
-                  Champion (2013)
-                </li>
-              </ul>
-            </details>
-
-            <details>
-              <summary>
-                <strong>Acting</strong>
-              </summary>
-              <ul>
-                <li>Practiced acting for eight years</li>
-                <li>Titles: Best Junior Actor Award (2014, 2015)</li>
-              </ul>
             </details>
           </section>
         </main>
